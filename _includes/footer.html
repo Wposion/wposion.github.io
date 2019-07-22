@@ -1,12 +1,8 @@
-<footer id="bottom">
-  <br>
-  <span>{{ site.title }} ©
-  {% assign current = "now" | date: "%Y" | plus: 0%}
-  {% unless site.footer.since and site.footer.since == current %}
-    {{ site.footer.since }}
-    -
-  {% endunless %}
-  {{ current }}
-  <br>
-  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+<footer class="footer">
+    <!-- <p>&copy; {{ site.username }}</p> -->
+    <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://github.com/murraco">Mauricio Urraco</a></p>
 </footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+{% include google-analytics.html %}
